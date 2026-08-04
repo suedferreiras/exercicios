@@ -2,15 +2,32 @@
 
 int main(){
 
-    float a, b, m, d, s, r;
+    float a, b, c,  m, d, s, r;
     char o; 
     
     printf("digite a operação usando um dos operadores a seguir: - + * /\n");
     scanf("%f  %c %f", &a, &o, &b );
     printf("Você digitou: %.2f %c %.2f\n", a, o, b);
 
-    m = a * b; d = a / b; s = a + b;r = a - b;
 
+
+    
+    while (a / b && b == 0){
+    
+            printf("A divisao nao pode ser por 0.\n");
+            printf("Digite novamente: \n");
+            
+            scanf("%f  %c %f", &a, &o, &b );
+            printf("Você digitou: %.2f %c %.2f\n", a, o, b);
+            (b != 0);
+
+        }
+    while( o != '*' && o != '/' && o != '+' && o != '-' ){
+            printf("Erro, digite novamente uma operação entre apenas dois numeros: \n");
+            scanf("%f  %c %f", &a, &o, &b );
+        }
+    m = a * b; d = a / b; s = a + b;r = a - b;
+        
     switch (o)
     {
     case '*':
@@ -20,7 +37,7 @@ int main(){
         if (a / b && b != 0){
             printf("%.2f  %c %.2f = %.2f\n", a, o, b, d);
         } else {
-            printf("A divisao nao pode ser por 0.\n");
+            printf("vc é muito burro\n");
         }
         break;
     case '+':
@@ -30,11 +47,12 @@ int main(){
         printf("%.2f  %c %.2f = %.2f\n", a, o, b, r);
         break;
     default:
-        if( o != '*' && o != '/' && o != '+' && o != '-' ){
-            printf("Erro, digite novamente uma operação entre apenas dois numeros: \n");
+        printf("erro");
+
         }
 
-        break;
+
+        
     }
 
 
@@ -43,4 +61,3 @@ int main(){
 
 
 
-}
