@@ -12,7 +12,7 @@ int main(){
 
 
     
-    while (a / b && b == 0){
+    while (b == 0 && o == '/'){
     
             printf("A divisao nao pode ser por 0.\n");
             printf("Digite novamente: \n");
