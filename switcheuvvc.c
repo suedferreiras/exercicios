@@ -1,16 +1,21 @@
 #include <stdio.h> 
 
-    
+void Menu(){
+    printf("\nescolha entre essas opcoes apertando no numero correspondente:\n");
+    printf("1 - banana\n");
+    printf("2 - uva\n");
+    printf("3 - mexerica\n");
+    printf("X - sair do programa\n");
+}
+
 int main(){
-
     char opcao;
-    printf("escolha entre essas opcoes apertando no numero correspondente: \n");
-    printf("1 - banana\n ");
-    printf("2 - uva\n ");
-    printf("3 - mexerica\n ");
+    
+    do{
+        Menu();
+        scanf(" %c", &opcao);
 
-    scanf("%c", &opcao);
-    switch(opcao){
+        switch(opcao){
         case '1':
             printf("a banana é bacana\n");
             break;
@@ -20,8 +25,16 @@ int main(){
         case '3':
             printf("a mexerica é enxerida\n");
             break;
-                
-    }
+        case 'X':
+        case 'x':
+            printf("obrigada por usar o programa\n");
+            break;
+        default:
+            printf("erro >:( \n");
+        }
+
+    }while(opcao != 'x' && opcao != 'X');
 
 
 }
+
