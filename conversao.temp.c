@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+
 void Menu(){
     printf("\n******MENU DE OPÇÕES******\n"
         "1 - Celsius para Fahrenheit\n2 - Fahrenheit para Celsius\n0 - Sair\n"
