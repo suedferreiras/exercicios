@@ -2,7 +2,6 @@
 
 int main(){
     char produtos[5][20]; int quantidade[5], n; float preco[5], estoque[5];
-
     for(n = 1; n <= 5; n++){
         printf("nome do %dº produto: \n", n); 
         scanf(" %[^\n]", produtos[n]); 
