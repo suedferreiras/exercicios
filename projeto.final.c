@@ -3,7 +3,7 @@
 //DEPOSITO SAQUE CONSULTA SALDO E EXTRATO DA SESSÃO
 
 void Menu(){
-    printf("\n======MENU BANCO======\n"
+    printf("======MENU BANCO======\n"
             "1 - Depositar\n2 - Sacar\n3 - Consultar Saldo\n"
             "4 - Ver extrato\n0 - Sair\n"
             "Escolha: ");
@@ -25,7 +25,30 @@ int main(){
     while(opcao != '0'){
     Menu();
     scanf(" %c", &opcao);
+    switch(opcao){
+        case '1':
+        printf("Depositar");
+        break;
+        case '2':
+        printf("Sacar");
+        break;
+        case '3':
+        printf("Consultar Saldo");
+        break;
+        case '4':
+        printf("Ver Extrato");
+        break;
+        case '0':
+        printf("Saindo...\n");
+        break;
+        default:
+        printf("Erro. Escreva novamente\n");
 
+
+
+
+
+    }
 
     }
 
